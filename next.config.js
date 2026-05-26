@@ -45,7 +45,17 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
   reactProductionProfiling: false,
   reactStrictMode: !isProduction,
-  turbopack: {},
+  turbopack: {
+    resolveAlias: {
+      child_process: "./utils/empty.js",
+      crypto: "./utils/empty.js",
+      fs: "./utils/empty.js",
+      os: "./utils/empty.js",
+      path: "./utils/empty.js",
+      readline: "./utils/empty.js",
+      worker_threads: "./utils/empty.js",
+    },
+  },
   webpack: (config) => {
     config.plugins.push(
       new webpack.NormalModuleReplacementPlugin(/node:/, (resource) => {
