@@ -1,9 +1,8 @@
-// @ts-expect-error Next.js 16 strict module resolution blocks deep imports, but this is a type-only import
-import {
-  type IconGroupEntry,
-  type IconGroupItem,
-  type ResourceEntry,
-} from "resedit/dist/resource";
+import { type NtExecutableResource, type Resource } from "resedit";
+
+type IconGroupEntry = Resource.IconGroupEntry;
+type IconGroupItem = IconGroupEntry["icons"][0];
+type ResourceEntry = NtExecutableResource["entries"][number];
 
 const RESERVED = 0;
 const ICON_TYPE = {
