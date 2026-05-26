@@ -45,6 +45,7 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
   reactProductionProfiling: false,
   reactStrictMode: !isProduction,
+  turbopack: {},
   webpack: (config) => {
     config.plugins.push(
       new webpack.NormalModuleReplacementPlugin(/node:/, (resource) => {
