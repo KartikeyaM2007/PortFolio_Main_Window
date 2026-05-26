@@ -1,8 +1,9 @@
-import type { Resource } from "resedit";
-
-type IconGroupEntry = Resource.IconGroupEntry;
-type IconGroupItem = Resource.IconGroupItem;
-type ResourceEntry = Resource.ResourceEntry;
+// @ts-ignore Next.js 16 strict module resolution blocks deep imports, but this is a type-only import
+import type {
+  IconGroupEntry,
+  IconGroupItem,
+  ResourceEntry,
+} from "resedit/dist/resource";
 
 const RESERVED = 0;
 const ICON_TYPE = {
