@@ -1,8 +1,8 @@
-// @ts-ignore Next.js 16 strict module resolution blocks deep imports, but this is a type-only import
-import type {
-  IconGroupEntry,
-  IconGroupItem,
-  ResourceEntry,
+// @ts-expect-error Next.js 16 strict module resolution blocks deep imports, but this is a type-only import
+import {
+  type IconGroupEntry,
+  type IconGroupItem,
+  type ResourceEntry,
 } from "resedit/dist/resource";
 
 const RESERVED = 0;
