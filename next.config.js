@@ -76,6 +76,13 @@ const nextConfig = {
     config.resolve.fallback = config.resolve.fallback || {};
     config.resolve.fallback.module = false;
     config.resolve.fallback.perf_hooks = false;
+    config.resolve.fallback.readline = false;
+    config.resolve.fallback.worker_threads = false;
+    config.resolve.fallback.child_process = false;
+    config.resolve.fallback.fs = false;
+    config.resolve.fallback.path = false;
+    config.resolve.fallback.os = false;
+    config.resolve.fallback.crypto = false;
 
     config.module.parser.javascript = config.module.parser.javascript || {};
     config.module.parser.javascript.dynamicImportFetchPriority = "high";
