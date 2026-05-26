@@ -1,7 +1,5 @@
-// eslint-disable-next-line import/consistent-type-specifier-style
-import type { ProfilePointer } from "nostr-tools/nip19";
-// eslint-disable-next-line import/consistent-type-specifier-style
-import type { NIP05Result } from "nostr-tools/nip05";
+import { type ProfilePointer } from "nostr-tools/nip19";
+import { type NIP05Result } from "nostr-tools/nip05";
 import {
   generatePrivateKey,
   getEventHash,
