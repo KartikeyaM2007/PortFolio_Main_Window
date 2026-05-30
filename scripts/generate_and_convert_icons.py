@@ -18,7 +18,14 @@ def process_icons():
         "crux.png": "crux",
         "lelo_interview.png": "lelo_interview",
         "leetcode.png": "leetcode",
-        "main.png": "main"
+        "main.png": "main",
+        "fin_mon.png": "fin_mon",
+        "forge_rag_ai.png": "forge_rag_ai",
+        "adversarial_attacks.png": "adversarial_attacks",
+        "task_manager_api.png": "task_manager_api",
+        "flask_crud_api.png": "flask_crud_api",
+        "multi_agent_career_rag.png": "multi_agent_career_rag",
+        "ops_pilot_ai.png": "ops_pilot_ai"
     }
     
     print("Starting automated icon conversion pipeline...")
